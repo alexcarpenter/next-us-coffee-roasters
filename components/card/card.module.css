@@ -1,0 +1,15 @@
+.card {
+  position: relative;
+  padding: 1.5rem;
+  border: 1px solid var(--theme-color-border);
+  border-radius: 4px;
+}
+
+.heading {
+  font-size: 1.125rem;
+}
+
+.description {
+  margin-top: .5rem;
+  color: var(--theme-color-gray);
+}

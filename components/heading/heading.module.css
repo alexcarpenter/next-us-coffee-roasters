@@ -1,0 +1,12 @@
+.heading {
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  line-height: 1.1;
+  letter-spacing: -.05em;
+  color: var(--theme-color-gray);
+}
+
+.heading span {
+  display: block;
+  color: var(--theme-color-foreground);
+}
