@@ -1,11 +1,11 @@
 .button {
   appearance: none;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   font: inherit;
-  background-color: var(--theme-color-primary);
+  background-color: var(--theme-color-foreground);
+  color: var(--theme-color-background);
   border: 0;
   border-radius: 4px;
-  color: #FFFFFF;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px 0px;
   transition: all ease-in-out 0.2s;
@@ -14,4 +14,14 @@
 .button:disabled {
   cursor: default;
   opacity: 0.5;
+}
+
+.primary {
+  background-color: var(--theme-color-primary);
+  color: #ffffff;
+}
+
+.secondary {
+  background-color: var(--theme-color-secondary);
+  color: #ffffff;
 }

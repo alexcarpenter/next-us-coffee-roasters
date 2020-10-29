@@ -1,10 +1,12 @@
-import Link from "next/link";
-import { paramCase } from "change-case";
 import Head from "@/components/head";
+import Box from "@/components/box";
+import Button from "@/components/button";
 import Card from "@/components/card";
 import Container from "@/components/container";
 import Heading from "@/components/heading";
+import Header from "@/components/header";
 import Grid from "@/components/grid";
+import Map from "@/components/map";
 import getStates from "@/lib/getStates";
 
 const groupBy = (key) => (array) =>
@@ -26,8 +28,24 @@ export default function Home({ roasters }) {
         description='Crowd-sourced list of US coffee roasters'
       />
       <Container>
-        <Heading />
-        <ul>
+        <Header>
+          <div style={{ width: "50%" }}>
+            <Heading />
+            <Box mt={1}>
+              <p>
+                Arcu lobortis iaculis sit nostra vehicula penatibus curabitur
+                augue pulvinar condimentum habitant donec dapibus quis nunc
+                felis ad lectus sollicitudin ultricies facilisis tellus hac
+                aliquam porttitor congue cum class turpis
+              </p>
+            </Box>
+            <Box mt={2}>
+              <Button variant='primary'>Submit coffee roaster</Button>
+            </Box>
+          </div>
+          <Map />
+        </Header>
+        {/* <ul>
           {states.map((state) => (
             <li>
               <Link href={`/roasters/${paramCase(state)}`}>
@@ -35,15 +53,15 @@ export default function Home({ roasters }) {
               </Link>
             </li>
           ))}
-        </ul>
-        <Grid>
+        </ul> */}
+        {/* <Grid>
           {roasters.map((roaster, index) => (
             <Card key={index}>
               <Card.Heading>{roaster.name}</Card.Heading>
               <Card.Description>{roaster.address}</Card.Description>
             </Card>
           ))}
-        </Grid>
+        </Grid> */}
       </Container>
     </>
   );

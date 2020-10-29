@@ -1,8 +1,7 @@
 .heading {
-  margin-bottom: 4rem;
   font-size: 4rem;
   line-height: 1.1;
-  letter-spacing: -.05em;
+  letter-spacing: -0.05em;
   color: var(--theme-color-gray);
 }
 

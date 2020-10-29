@@ -1,0 +1,5 @@
+.footer {
+  padding: 4rem 1rem;
+  background-color: var(--theme-color-background-light);
+  border-top: 1px solid var(--theme-color-border);
+}

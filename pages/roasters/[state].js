@@ -3,22 +3,32 @@ import { capitalCase, paramCase } from "change-case";
 import Card from "@/components/card";
 import Container from "@/components/container";
 import Grid from "@/components/grid";
+import Head from "@/components/head";
+import Header from "@/components/header";
 import Heading from "@/components/heading";
 import getStates from "@/lib/getStates";
 
 function State({ state, roasters }) {
   return (
-    <Container>
-      <Heading prefix={state} />
-      <Grid>
-        {roasters.map((roaster, index) => (
-          <Card key={index}>
-            <Card.Heading>{roaster.name}</Card.Heading>
-            <Card.Description>{roaster.address}</Card.Description>
-          </Card>
-        ))}
-      </Grid>
-    </Container>
+    <>
+      <Head
+        title={`${state} - Coffee Roasters`}
+        description='Crowd-sourced list of US coffee roasters'
+      />
+      <Container>
+        <Header>
+          <Heading prefix={state} />
+        </Header>
+        <Grid>
+          {roasters.map((roaster, index) => (
+            <Card key={index}>
+              <Card.Heading>{roaster.name}</Card.Heading>
+              <Card.Description>{roaster.address}</Card.Description>
+            </Card>
+          ))}
+        </Grid>
+      </Container>
+    </>
   );
 }
 

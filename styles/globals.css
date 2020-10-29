@@ -1,5 +1,6 @@
 :root {
   --theme-color-background: #ffffff;
+  --theme-color-background-light: #fafafa;
   --theme-color-foreground: #000000;
   --theme-color-primary: #0055ff;
   --theme-color-secondary: #ff3300;
@@ -9,6 +10,7 @@
 
 [data-theme="dark"] {
   --theme-color-background: #000000;
+  --theme-color-background-light: #111111;
   --theme-color-foreground: #ffffff;
   --theme-color-gray: #aaaaaa;
   --theme-color-border: #444444;
@@ -38,12 +40,19 @@ html::before {
 
 body {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   padding-top: 4rem;
-  padding-bottom: 4rem;
   font-family: "Inter", sans-serif;
   background-color: var(--theme-color-background);
   color: var(--theme-color-foreground);
   line-height: 1.5;
+}
+
+main {
+  margin-bottom: auto;
+  padding-bottom: 4rem;
 }
 
 h1,

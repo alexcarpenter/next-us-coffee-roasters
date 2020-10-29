@@ -1,0 +1,21 @@
+.map {
+  width: 100%;
+  max-width: 50%;
+}
+
+.map > * {
+  fill: var(--theme-color-foreground);
+  transition: fill ease-in-out 0.2s;
+  outline: none;
+}
+
+.map:hover > *,
+.map:focus-within > * {
+  fill: var(--theme-color-gray);
+}
+
+.map:hover > :hover,
+.map:focus-within > :focus {
+  fill: var(--theme-color-foreground);
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.toggle {
+  appearance: none;
+  position: fixed;
+  top: 1.5rem;
+  right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background-color: var(--theme-color-background-light);
+  border: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity ease-in-out 0.2s;
+}
+
+.toggle:hover,
+.toggle:focus {
+  opacity: 1;
+}

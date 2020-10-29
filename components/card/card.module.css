@@ -3,6 +3,10 @@
   padding: 1.5rem;
   border: 1px solid var(--theme-color-border);
   border-radius: 4px;
+  box-shadow: 0 0.6px 2.2px rgba(0, 0, 0, 0.008),
+    0 1.3px 5.3px rgba(0, 0, 0, 0.012), 0 2.5px 10px rgba(0, 0, 0, 0.015),
+    0 4.5px 17.9px rgba(0, 0, 0, 0.018), 0 8.4px 33.4px rgba(0, 0, 0, 0.022),
+    0 20px 80px rgba(0, 0, 0, 0.03);
 }
 
 .heading {
@@ -10,6 +14,6 @@
 }
 
 .description {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   color: var(--theme-color-gray);
 }
